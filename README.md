@@ -29,4 +29,20 @@ ts使用
  * @returns {Function} 
  */
 export const useThrottle = (fn: Function, delay: number)
+
+/**
+ * 防抖，等待时间结束再执行
+ * @param {Function} fn 
+ * @param {number} delay 毫秒
+ * @returns {Function} 
+ */
+export const useDebounce = (fn: Function, delay: number)
+
+/**
+ * 防抖，先执行一次
+ * @param {Function} fn 
+ * @param {number} delay 毫秒
+ * @returns {Function} 
+ */
+export const useDebounceAtOnce = (fn: Function, delay: number)
 ```
